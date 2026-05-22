@@ -16,6 +16,78 @@
     <title>Formulario de contacto</title>
 </head>
 <body>
-    
+    <nav class="navbar">
+    <img src="img/logo3.png" alt="Logo PaySuki">
+
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
+    <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Inicio <img src="img/logo5.png" alt="estrella" class="estrella"></a>
+        <a href="about.html" class="nav-link">Sobre nosotros <img src="img/logo5.png" alt="estrella" class="estrella"></a>
+        <a href="compras.html" class="nav-link">Productos <img src="img/logo5.png" alt="estrella" class="estrella"></a>
+        <a href="contact.html" class="nav-link">Contactanos! <img src="img/logo5.png" alt="estrella" class="estrella"></a>
+    </div>
+</nav>
+
+<section class="contacto-section">
+    <h1>Formulario de contacto</h1>
+
+    <form class="contacto-form" id="form-contacto" action="contactResponse.html" method="get">
+        <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+            <label for="producto">Producto</label>
+            <select id="producto" name="producto" required>
+                <option value="">Selecciona un producto</option>
+                <option value="pay-gojo">Pay Gojo</option>
+                <option value="pay-maomao">Pay MaoMao</option>
+                <option value="pay-giorno">Pay Golden Experience</option>
+                <option value="pay-itadori">Pay Black-Flash</option>
+                <option value="pay-purpura">Pay Vacío purpura</option>
+                <option value="pay-personalizado">Pay personalizado</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="motivo">Motivo</label>
+            <textarea id="motivo" name="motivo" rows="8" required></textarea>
+        </div>
+    </form>
+
+    <button type="submit" form="form-contacto" class="btn-enviar">Enviar</button>
+</section>
+
+
+<section class="footer">
+    <p>PaySuki Todos los derechos reservados</p>
+    <p>Nuestras redes sociales</p>
+
+<div class="redes">
+    <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B"click_point"%3A"edit_profile_button"%2C"feature"%3A"profile_header"%7D&id=61584988731191&sk=about&locale=es_LA' target="_blank">
+        <img src="img/facebook.png" alt="Facebook PaySuki">
+    </a>
+
+    <a href="https://www.tiktok.com/@paysuki?lang=es" target="_blank">
+        <img src="img/tiktok.webp" alt="TikTok PaySuki">
+    </a>
+</div>
+    <a href="privacy.html" class="footer-link">Aviso de privacidad y cookies</a>
+</section>
+        <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -12,9 +12,156 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Productos</title>
 </head>
 <body>
+<nav class="navbar">
+    <img src="img/logo3.png" alt="Logo PaySuki">
+
+    <button class="menu-toggle" id="menu-toggle">
+        ☰
+    </button>
+
+    <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">
+            Inicio
+            <img src="img/logo5.png" alt="estrella" class="estrella">
+        </a>
+
+        <a href="about.html" class="nav-link">
+            Sobre nosotros
+            <img src="img/logo5.png" alt="estrella" class="estrella">
+        </a>
+
+        <a href="compras.html" class="nav-link">
+            Productos
+            <img src="img/logo5.png" alt="estrella" class="estrella">
+        </a>
+
+        <a href="contact.html" class="nav-link">
+            Contactanos!
+            <img src="img/logo5.png" alt="estrella" class="estrella">
+        </a>
+
+        <a href="compras.html" class="cart-link">
+            <img src="img/grocery-store.png" alt="Carrito de compras">
+        </a>
+    </div>
+</nav>
+
+<section class="productos-slider">
+    <h1>Nuestros productos</h1>
+
+    <div class="slider-container">
+        <button class="prev">&#10094;</button>
+
+        <div class="slider-track">
+            <img src="img/pay1.jpg" class="slide active" alt="Pay 1">
+            <img src="img/pay2.jpg" class="slide" alt="Pay 2">
+            <img src="img/pay3.jpg" class="slide" alt="Pay 3">
+        </div>
+
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<section class="productos-lista">
+
+    <article class="producto-card">
+        <div class="producto-img">
+            <img src="img/pay2.jpg" alt="Pay Gojo">
+        </div>
+
+        <div class="producto-info">
+            <h2>Pay Gojo</h2>
+            <p class="producto-precio">$150 MXN</p>
+
+            <select>
+                <option>Tamaño</option>
+                <option>Chico</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+            </select>
+
+            <p>
+                Pay temático inspirado en el color blanco caracteristico del personaje Gojo, ideal para regalos,
+                eventos o pedidos personalizados.
+            </p>
+
+            <button class="btn-carrito">Agregar al carrito</button>
+        </div>
+    </article>
+
+    <article class="producto-card">
+        <div class="producto-img">
+            <img src="img/pay1.jpg" alt="Pay MaoMao">
+        </div>
+
+        <div class="producto-info">
+            <h2>Pay MaoMao</h2>
+            <p class="producto-precio">$130 MXN</p>
+
+            <select>
+                <option>Tamaño</option>
+                <option>Chico</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+            </select>
+
+            <p>
+                Pay con temática especial de MaoMao, pensado para clientes que buscan
+                un postre diferente y personalizado.
+            </p>
+
+            <button class="btn-carrito">Agregar al carrito</button>
+        </div>
+    </article>
+
+    <article class="producto-card">
+        <div class="producto-img">
+            <img src="img/pay3.jpg" alt="Pay personalizado">
+        </div>
+
+        <div class="producto-info">
+            <h2>Pay Golden Experience</h2>
+            <p class="producto-precio">$180 MXN</p>
+
+            <select>
+                <option>Tamaño</option>
+                <option>Chico</option>
+                <option>Mediano</option>
+                <option>Grande</option>
+            </select>
+
+            <p>
+                Pay personalizado con colores tematicos y relacionados a Giorno Giovanna del anime JoJo's
+            </p>
+
+            <button class="btn-carrito">Agregar al carrito</button>
+        </div>
+    </article>
+
+    
+
+</section>
+
+<section class="footer">
+    <p>PaySuki Todos los derechos reservados</p>
+    <p>Nuestras redes sociales</p>
+
+<div class="redes">
+    <a href='https://www.facebook.com/profile.php?fb_profile_edit_entry_point=%7B"click_point"%3A"edit_profile_button"%2C"feature"%3A"profile_header"%7D&id=61584988731191&sk=about&locale=es_LA' target="_blank">
+        <img src="img/facebook.png" alt="Facebook PaySuki">
+    </a>
+
+    <a href="https://www.tiktok.com/@paysuki?lang=es" target="_blank">
+        <img src="img/tiktok.webp" alt="TikTok PaySuki">
+    </a>
+</div>
+    <a href="privacy.html" class="footer-link">Aviso de privacidad y cookies</a>
+</section>
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>
