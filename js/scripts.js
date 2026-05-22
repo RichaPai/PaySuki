@@ -1,23 +1,31 @@
+const slides = document.querySelectorAll('.slide');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
 
-    const slides = document.querySelectorAll('.slide');
-    let index = 0;
+let index = 0;
 
-    const showSlide = (i) => {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[i].classList.add('active');
-    };
+const showSlide = (i) => {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[i].classList.add('active');
+};
 
-    document.querySelector('.next').addEventListener('click', () => {
+if (slides.length > 0 && nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', () => {
         index = (index + 1) % slides.length;
         showSlide(index);
     });
 
-    document.querySelector('.prev').addEventListener('click', () => {
+    prevBtn.addEventListener('click', () => {
         index = (index - 1 + slides.length) % slides.length;
         showSlide(index);
     });
+}
 
-    const clientes = document.querySelectorAll('.cliente');
+
+const clientes = document.querySelectorAll('.cliente');
+const nextCliente = document.querySelector('.next-cliente');
+const prevCliente = document.querySelector('.prev-cliente');
+
 let indexCliente = 0;
 
 const showCliente = (i) => {
@@ -25,12 +33,24 @@ const showCliente = (i) => {
     clientes[i].classList.add('active');
 };
 
-document.querySelector('.next-cliente').addEventListener('click', () => {
-    indexCliente = (indexCliente + 1) % clientes.length;
-    showCliente(indexCliente);
-});
+if (clientes.length > 0 && nextCliente && prevCliente) {
+    nextCliente.addEventListener('click', () => {
+        indexCliente = (indexCliente + 1) % clientes.length;
+        showCliente(indexCliente);
+    });
 
-document.querySelector('.prev-cliente').addEventListener('click', () => {
-    indexCliente = (indexCliente - 1 + clientes.length) % clientes.length;
-    showCliente(indexCliente);
-});
+    prevCliente.addEventListener('click', () => {
+        indexCliente = (indexCliente - 1 + clientes.length) % clientes.length;
+        showCliente(indexCliente);
+    });
+}
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    });
+}
